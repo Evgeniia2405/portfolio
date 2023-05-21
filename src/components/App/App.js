@@ -96,11 +96,12 @@ function App() {
         if (res) {
           setCurrentUser(res);
           setLoggedIn(true);
-          if (
-            location.pathname === "/" 
-          ) {
-            navigate("/movies");
-          }
+          navigate("/movies");
+          // if (
+          //   location.pathname === "/" 
+          // ) {
+          //   navigate("/movies");
+          // }
         }
       })
       .catch((err) => {
@@ -108,7 +109,6 @@ function App() {
         setCurrentUser({});
         localStorage.removeItem("jwt");
         setServerMessage("Ошибка при получении token", err);
-        navigate("/");
       });
   }
 
