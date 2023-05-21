@@ -6,19 +6,13 @@ import { useInput } from "../../../hooks/useForm";
 import Preloader from "../../Preloader/Preloader";
 
 function Register({ onRegistr, serverMessage, isLoading }) {
-  const name = useInput("", {
-    isEmpty: true,
-    minLength: 2,
-    maxLength: 30,
-    isName: true,
-  });
+
   const email = useInput("", { isEmpty: true, isEmail: true });
   const password = useInput("", { isEmpty: true, minLength: 3 });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     onRegistr(email.value, password.value);
-    localStorage.setItem("nameUser", name.value);
   };
 
   return (
@@ -71,7 +65,7 @@ function Register({ onRegistr, serverMessage, isLoading }) {
               </>
             }
             formValid={
-              name.inputValid && email.inputValid && password.inputValid
+              email.inputValid && password.inputValid
             }
             button="Зарегистрироваться"
           />
