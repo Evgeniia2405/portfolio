@@ -57,6 +57,7 @@
 
 .nav__link:hover {
   opacity: 0.8;
+  color: #3ddc84;
 }
 
 @media screen and (min-width: 520px) {

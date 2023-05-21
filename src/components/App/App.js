@@ -69,6 +69,8 @@ function App() {
         location.pathname === "/profile"
       ) {
         navigate("/");
+      } else {
+        navigate("/");
       }
     }
   }, []);
@@ -169,7 +171,7 @@ function App() {
   }
 
   function handleSignOut() {
-    setLoggedIn(false); 
+    setLoggedIn(false);
     localStorage.removeItem("jwt");
     localStorage.removeItem("allMovies");
     localStorage.removeItem("textSearch");
