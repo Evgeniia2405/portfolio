@@ -15,7 +15,7 @@ function AboutMe() {
           <>
             <div className="student__about">
             <img
-                src="../../../public/AboutMe.jpg"
+                src="../../../public/aboutme.jpg"
                 className="student__img"
                 alt="фото студента"
               />
