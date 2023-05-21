@@ -79,7 +79,6 @@ function App() {
         .getUserInfo()
         .then((data) => {
           setCurrentUser(data);
-          console.log("ss", data);
         })
         .catch((err) => {
           setServerMessage(`Ошибка: ${err}`);
@@ -94,7 +93,6 @@ function App() {
       .then((res) => {
         if (res) {
           setCurrentUser(res);
-          console.log("curretUser", res);
           setLoggedIn(true);
           if (
             location.pathname === "/signup" ||
@@ -160,7 +158,6 @@ function App() {
       .editUserInfo(name, about)
       .then((res) => {
         setCurrentUser(res);
-        console.log('мы были туту')
         setServerMessage("Вы успешно обновили данные");
       })
       .catch((err) => {

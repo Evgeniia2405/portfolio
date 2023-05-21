@@ -15,7 +15,7 @@ export const dataPortfolio = [
   },
   {
     id: 3,
-    title: 'Статичный сайт',
+    title: 'Статичный неадаптивный сайт',
     link: 'https://evgeniia2405.github.io/how-to-learn/',
     target: '_blank',
     rel: 'noreferrer'
