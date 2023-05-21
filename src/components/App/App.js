@@ -109,6 +109,7 @@ function App() {
         setCurrentUser({});
         localStorage.removeItem("jwt");
         setServerMessage("Ошибка при получении token", err);
+        navigate("/");
       });
   }
 
