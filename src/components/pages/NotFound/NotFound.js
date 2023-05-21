@@ -11,7 +11,6 @@ function NotFound() {
         <Logo/>
         <h2 className="content__title">404</h2>
         <p className="content__text">Страница не найдена</p>
-        <p onClick={() => navigate("/")} className="content__link">Вернуться на главную</p>
       </div>
       <p onClick={() => navigate(-1)} className="content__link">
         Назад

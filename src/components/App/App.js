@@ -63,12 +63,12 @@ function App() {
     if (localStorage.getItem("jwt")) {
       handleCheckToken();
     } else {
-      if (
-        location.pathname === "/saved-movies" ||
-        location.pathname === "/movies" ||
-        location.pathname === "/profile"
-      ) {
-        navigate("/");
+      if (location.pathname === "/signin" || location.pathname === "/signup") {
+        if (location.pathname === "/signup") {
+          navigate("/signup");
+        } else {
+          navigate("/signin");
+        }
       } else {
         navigate("/");
       }
@@ -97,10 +97,9 @@ function App() {
           setCurrentUser(res);
           setLoggedIn(true);
           if (
-            location.pathname === "/signup" ||
-            location.pathname === "/signin"
+            location.pathname === "/" 
           ) {
-            navigate("/");
+            navigate("/movies");
           }
         }
       })
