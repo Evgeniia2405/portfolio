@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "../Section/Section";
-import AboutMeImage from "../../images/aboutme.jpg"
+//import AboutMeImage from "../../images/aboutme.jpg"
 import "./AboutMe.css";
 import Portfolio from "../Portfolio/Portfolio";
 
@@ -15,7 +15,7 @@ function AboutMe() {
           <>
             <div className="student__about">
             <img
-                src={AboutMeImage}
+                src="https://avatars.githubusercontent.com/u/107268897?v=4"
                 className="student__img"
                 alt="фото студента"
               />
