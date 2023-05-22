@@ -1,5 +1,4 @@
 export const BASE_URL = "https://auth.nomoreparties.co";
-// export const BASE_URL = "https://api.movies.evgenia2405.nomoredomains.work";
 function getResponse(res) {
   if (!res.ok) {
     return Promise.reject(res.status);

@@ -96,14 +96,12 @@ function App() {
         if (res) {
           setCurrentUser(res);
           setLoggedIn(true);
-          // navigate("/");
-          if (
-            location.pathname !== "/" 
-          ) {
-            navigate("/movies");
-          } else {
-            navigate("/");
-          }
+          navigate("/");
+          // if (
+          //   location.pathname === "/" 
+          // ) {
+          //   navigate("/movies");
+          // }
         }
       })
       .catch((err) => {
